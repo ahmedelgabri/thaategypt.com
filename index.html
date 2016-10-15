@@ -10,27 +10,41 @@
 
       html,
       body {
-        height: 100%;
+        min-height: 100%;
       }
 
       body {
         margin: 0;
-        padding: 0;
+        padding: 2rem;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
         font-size: 1rem;
         line-height: 1.5;
         color: #444;
         background: url(assets/background.jpg) no-repeat 50%;
         background-size: cover;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+      }
+
+      @media screen and (min-width: 48em) {
+        body {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+        }
+      }
+
+      @media screen and (min-width: 64em) {
+        body {
+          padding-top: 10rem;
+          height: auto;
+          min-height: 100%;
+          overflow: hidden;
+        }
       }
 
       a {
@@ -85,7 +99,7 @@
     <div class="Content">
       <img src="assets/logo.jpg" width="200" alt="">
       <div class="Inner">
-        <h1>Thaat Social enterprise & Innovative Consultancy</h1>
+        <h1>Thaat Social Enterprise & Innovative Consultancy</h1>
         <p> We seek smaller numbers of beneficiaries at each initiative because at Thaat we want to influence the way our beneficiaries handle their craft and design businesses.  </p>
         <p> We will also focus on expanding our craft/design and business related industries networks-that are significant in supporting long-term sustainable social, cultural and economic benefits.  </p>
         <p>Thaat is the brainchild of Peri A. Abou Zied, who prefers to be described as someone who holds a lamp over her head rather than a social entrepreneur. Peri is based in Cairo, Egypt and holds a MFA in Outsiders art and an MA. in Social Entrepreneurship from Goldsmiths college in London.</p>
